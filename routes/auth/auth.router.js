@@ -2,8 +2,8 @@ const express = require("express");
 
 const router = express.Router();
 
-router.post("/register", (req, res) => {
-  res.json("success");
-});
+const { register } = require("../../controllers");
+
+router.post("/register", register);
 
 module.exports = router;
